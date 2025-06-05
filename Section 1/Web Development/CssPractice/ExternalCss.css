@@ -1,0 +1,381 @@
+.Externaldiv {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(202, 125, 32);
+
+}
+
+.btn-container {
+    margin-inline: 50%;
+    margin-block: 20px;
+    display: inline-flex;
+}
+
+.solid-btn {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 10px;
+}
+
+.outline-btn {
+    background-color: white;
+    border: 1px solid blueviolet;
+    color: black;
+    /* border: none; */
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 10px;
+    margin-inline-start: 10px;
+}
+
+.solid-btn {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 10px;
+}
+
+.gradient-btn {
+    background: linear-gradient(to right, red 50%, yellow 50%);
+    color: white;
+    border: none;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 10px;
+    margin-inline-start: 10px;
+}
+
+.solid-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid blueviolet;
+}
+
+.outline-btn:hover {
+    background-color: blueviolet;
+    color: white;
+    /* border: 1px solid blueviolet; */
+}
+
+.img1 {
+    height: 250px;
+    margin-right: 44%;
+    margin-bottom: 50px;
+    float: right;
+}
+
+.movename {
+    width: 30%;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: -22px;
+
+}
+
+.pera {
+    margin-bottom: -22px;
+
+}
+
+.container {
+    background-color: yellow;
+    height: 250px;
+}
+
+.container:hover {
+    background-color: black;
+    color: white;
+}
+
+.border-dotted {
+    border: 3px dotted green;
+    text-align: center;
+
+}
+
+
+.border-solid {
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+.border-solid:hover {
+    border: 5px dashed red;
+    background-color: black;
+    color: white;
+}
+
+.border-sides {
+    border: 2px solid black;
+
+}
+
+.border-sides:hover {
+    border-top: 2px red double;
+    border-bottom: 2px yellow double;
+    border-left: 2px green solid;
+    border-right: 2px gray dotted;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.bell {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification {
+    background-color: red;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    bottom: 6px;
+    right: 2px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 100px;
+    font-size: 7px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.bell:hover {
+    transform: scale(1.5);
+}
+
+.navbar {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    background-color: black;
+    width: 20%;
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.navbar-items {
+    background-color: black;
+    width: 60%;
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.navbar-items1 {
+    background-color: black;
+    height: 61px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo1 {
+    height: 50px;
+    width: 50px;
+}
+.practice {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white
+}
+
+.container {
+    margin-top: 20px;
+}
+
+
+.home {
+    padding: 10px;
+    height: 20px;
+    width: 8%;
+    color: black;
+    background-color: white;
+    border: 1px solid red;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.home:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+
+.about {
+    padding: 10px;
+    height: 20px;
+    width: 8%;
+    color: black;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.about:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.contect-as {
+    padding: 10px;
+    height: 20px;
+    width: 10%;
+    color: black;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.contect-as:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+.search-icon {
+    background-color: white;
+    height: 22px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px 0 0 10px;
+
+}
+.search-bar {
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+.notification2 {
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px;
+    height: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.notification2:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    border-radius: 5px;
+
+}
+
+.login {
+    padding: 10px;
+    height: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.login:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+
+.button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 47%;
+}
+
+.gradient {
+    height: 250px;
+    width: 100%;
+
+    /* background:linear-gradient(blue,white); */
+
+    /* color divaided from % */
+    /* background:linear-gradient(blue 50%,white 50%); */
+
+    /* multi color in linear-gradient */
+    background: linear-gradient(red, yellow, blue, black, pink);
+    border: 2px solid black;
+}
+
+.radial {
+    height: 250px;
+    width: 100%;
+    /* background:radial-gradient(blue,black,pink) */
+
+    /* circle radial-gradient */
+    background: radial-gradient(circle, red 15%, yellow 20%, black 50%)
+}
+
+.transition {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.transition:hover {
+    width: 200px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+.flex {
+    background-color: aqua;
+}
+
+.login1 {
+    background: linear-gradient(red, blue, yellow);
+    padding-block: 15px;
+    padding-inline: 25px;
+    border-radius: 5px;
+}
+.search{
+    position: absolute;
+    right: 20%;
+    top: 40px;
+        
+}

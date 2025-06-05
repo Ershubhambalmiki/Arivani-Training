@@ -1,0 +1,471 @@
+/* header */
+.meesho {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #570d48;
+}
+
+/* mennu bar */
+
+.menu-bar1 {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+    position: relative;
+ 
+
+}
+
+.women-ethinc {
+    width: 1200px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    margin-top:20px;
+    border-radius: 5px;
+ 
+   
+
+}
+
+
+.menu-bar1:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+
+.menu-bar1:hover .women-ethinc {
+    display: block;
+    color: #606073;
+   
+   
+
+}
+
+
+.menu-bar2 {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+/* .women-western {
+    height: 100px;
+    background-color: #23ba74;
+    width: 1200px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10px;
+    border-radius: 5px;
+
+} */
+
+/* .menu-bar2:hover .women-western {
+    display: block;
+} */
+
+.menu-bar2:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.menu-bar3 {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+.menu-bar3:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.menu-bar4 {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+.menu-bar4:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.menu-bar5 {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+.menu-bar5:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.menu-bar6 {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+.menu-bar6:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.menu-bar7 {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+.menu-bar7:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.menu-bar8 {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+.menu-bar8:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.menu-bar9 {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+.menu-bar9:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.menu-bar10 {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #8b8ba3;
+    margin: 2px;
+    padding: 5px;
+
+}
+
+.menu-bar10:hover {
+    color: #9e2089;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.lowest {
+    font-weight: bold;
+    color: #343442;
+    padding-left: 20px;
+
+}
+
+.Free-Dalevery {
+    background-color: white;
+}
+
+.cash {
+    background-color: white;
+}
+
+.Easy {
+    background-color: white;
+}
+
+.playstor {
+    background-color: #9e2089;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.download-app:hover {
+    color: #9e2089;
+    font: weight 100px;
+    border-bottom: 2px solid #570d48;
+    cursor: pointer;
+}
+
+.Dowload-form-p {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+
+
+}
+
+.download-form {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    right: 35%;
+    z-index: 2;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px gray;
+}
+
+.download-app:hover .download-form {
+    display: block;
+    color: black;
+    
+}
+
+.top-categroies {
+    font-weight: bold;
+}
+
+.banner {
+    display: flex;
+    margin-bottom: 60px;
+    height: 546px;
+    width: 100%;
+    background-image: url(https://images.meesho.com/images/marketing/1737370606433_1200.webp);
+    background-size: 100% 100%;
+     
+     /* background-repeat: no-repeat; */
+    /* padding: 0px 24px 0px 28px; */
+    border-radius: 4px;
+}
+
+.be-fashion {
+    margin-top: 20%;
+    font-size: 50px;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    text-shadow: 4px 4px 6px #000000
+}
+
+.banner1 {
+    display: flex;
+    margin-bottom: 60px;
+    height: 546px;
+    width:100%;
+    background-size: 100% 100%;
+    padding: 0px 24px 0px 28px;
+    border-radius: 4px;
+    background-image: url(https://images.meesho.com/images/pow/downloadBannerDesktop_1050.webp);
+}
+.bg-image-test {
+    background-position-x: center;
+    background-size: 100% 100%;
+    width: 100%;
+    /* height: 200px; */
+    background-repeat: no-repeat;
+    background-image: url(https://images.meesho.com/images/pow/downloadBannerDesktop_1050.webp);
+}
+
+.banner-text {
+    margin-top: 5%;
+    font-size: 45px;
+    color: #9e2089;
+    font-family: sans-serif;
+}
+
+.banner2 {
+    height: 300px;
+    width: 100%;
+    background-size: 100% 100%;
+    padding: 0px 24px 0px 28px;
+    border-radius: 4px;
+    background-image: url(https://images.meesho.com/images/pow/supplyBannerDesktop_1106.webp);
+}
+
+.free-Dalevery {
+    background-color: #f7f7ff;
+    width: 100px;
+    font-size: small;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.rating {
+    margin-top: 10px;
+    background-color: #23ba74;
+    width: 80px;
+    font-size: 13px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: FontAwesome;
+    align-items: center;
+}
+
+.reviews {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: small;
+    color: #8b8ba3;
+}
+
+
+/* said bar */
+.dropdown {
+    margin-left: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 307px;
+    height: 40px;
+    border: none;
+    outline: none;
+    justify-content: space-between;
+}
+
+.dropdown-content {
+
+    z-index: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    overflow: auto;
+    outline: none;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #f7f7ff;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+
+
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f9a825;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links li a {
+    color: white;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+}

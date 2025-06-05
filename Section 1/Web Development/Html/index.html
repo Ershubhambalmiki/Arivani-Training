@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first html page</title>
+    <script src="https://kit.fontawesome.com/513c0dafbf.js" crossorigin="anonymous"></script>
+    <style>
+        table {
+            border-collapse: separate;
+            /* This is important for spacing */
+            border-spacing: 20px;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 8px;
+            /* Adds some padding inside the cells */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="background-color: yellow; width: 100%; padding: 5px; position: sticky; top: 0; z-index: 1;">
+        <!-- <img src="./images/Azaad.avif" alt="" width="300px" height="250px" style=""> -->
+         <marquee behavior="alternate" direction="left" scrollamount="10"><h1 style="">This is the index page</h1></marquee>
+    </div>
+
+    <!-- Headings -->
+    <h1 style="position: fixed; right: 0;">This is H1 Heading</h1>
+    <h2>This is H2 Heading</h2>
+    <h3>This is H3 Heading</h3>
+
+    <!-- Paragraphs -->
+    <p>Lorem ipsum <del> dolor </del>sit amet consectetur adipisicing elit. <b>Aspernatur</b> aut reprehenderit ex
+        dolores provident perferendis, voluptate tempora similique officiis placeat molestiae dicta animi ratione iure
+        voluptatem totam quos, impedit, est veritatis. Magni, iusto inventore quibusdam veritatis natus sed suscipit.
+        Ipsa voluptatum deserunt deleniti iusto eum architecto maxime explicabo, id consectetur quam, quo nesciunt
+        possimus nostrum cupiditate eos, quisquam assumenda perspiciatis? Deserunt obcaecati pariatur at eligendi quasi
+        impedit consequatur itaque dignissimos praesentium! Distinctio, ipsam error excepturi ea repudiandae consectetur
+        quia molestiae! Nam perferendis nisi laboriosam a. Corrupti quibusdam accusamus distinctio enim molestias?
+        Dignissimos ullam minus optio nam quis voluptates at eum!</p>
+
+    <!-- Anchor -->
+    <a href="https://www.netflix.com/in/" target="_blank">Click here to visit Netflix</a>
+    <a href="/resume.html" target="_blank">Click here to visit Resume</a>
+    <a href="/ragitretion.html" target="_blank">Click on Student Ragistertion page</a>
+    <br><br>
+
+    <!-- image -->
+    <img src="https://i.pinimg.com/originals/67/c1/ef/67c1ef7a243ca56f6ee776d15110f896.jpg" alt="" width="300px"
+        height="200px">
+    <img src="./bg-image.jpg" alt="" width="300px" height="200px">
+    <video src="https://www.boat-lifestyle.com/cdn/shop/files/quinn_wlacs5m0tq7rv91yh1gv9rv7.mp4#t=0.1" width="300px"
+        height="200px" autoplay controls></video>
+    <audio src="./multimedia/audio.mp3" controls></audio>
+
+    <!-- Lists -->
+
+    <ol>
+        <em>
+            <h1>My Education</h1>
+        </em>
+        <li>Diploma</li>
+        <li>12th</li>
+        <li>10th</li>
+    </ol>
+
+    <ul>
+        <u>
+            <h1>My Hobbies</h1>
+        </u>
+        <li>Cricket</li>
+        <li>Coding</li>
+        <li>Reading</li>
+    </ul>
+
+    <span>Shubham</span>
+    <span>Balmiki</span>
+
+
+    <!-- form -->
+    <!-- <center> -->
+    <h1>This is a registration form.</h1>
+    <form action="/resume.html">
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter your name" required><br>
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter your email"><br>
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter your password"><br>
+        <!-- Radio -->
+        <span>Gender</span><br>
+        <input type="radio" id="male" value="MALE" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="FEMALE" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="other" value="OTHER" name="gender">
+        <label for="other">Other</label><br>
+
+        <!-- Checkbox -->
+        <span>Hobbies</span><br>
+        <input type="checkbox" id="value1" name="value1">
+        <label for="value1">Cricket</label>
+        <input type="checkbox" id="value1" name="value1">
+        <label for="value2">Coding</label>
+        <input type="checkbox" id="value1" name="value1">
+        <label for="value3">Reading</label><br>
+
+        <!-- select -->
+        <span>Sports</span><br>
+        <select name="sports" id="">
+            <option value="default">--Select--</option>
+            <option value="basketball">Basketball</option>
+            <option value="basketball">Football</option>
+            <option value="basketball">Volleyball</option>
+            <option value="basketball">Pinball</option>
+        </select><br>
+
+        <label>College Name</label><br>
+        <input list="college-name">
+        <datalist id="college-name">
+            <option>LU</option>
+            <option>BBDNIIT</option>
+            <option>JLMP</option>
+            <option>SRM</option>
+        </datalist><br>
+
+        <!-- textArea -->
+        <span>About</span><br>
+        <textarea name="" id="" rows="4" placeholder="Tell us about yourself"></textarea><br>
+
+        <!-- date time -->
+        <label for="">Date and Time</label><br>
+        <input type="datetime-local"><br><br>
+
+
+        <details>
+            <summary><input type="checkbox" required> I agree about <mark>terms and conditions</mark></summary>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi facere architecto consequuntur tenetur
+                consectetur, exercitationem vero deleniti itaque optio odit quam consequatur rem nemo, totam, modi
+                cumque! Itaque a voluptate perferendis eveniet ipsa quibusdam eligendi impedit id. Quos earum placeat
+                voluptatibus fuga at labore quia, in possimus quisquam autem fugit!</p>
+        </details>
+
+        <!-- button -->
+        <input type="submit" value="Submit">
+
+    </form><br><br>
+
+    <!-- Tables -->
+    <table style="width: 100%; border: 1px solid black;">
+        <colgroup>
+            <col span="2" style="background-color: aqua;">
+        </colgroup>
+        <tr style="border: 1px solid black;">
+            <th colspan="2">Name</th>
+            <th>Email</th>
+            <th>Age</th>
+
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td><mark>example@gmail.com</mark></td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Shubham</td>
+            <td>Balmiki</td>
+            <td>shubham@gmail.com</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>Doe</td>
+            <td rowspan="2">doe@gmail.com</td>
+            <td rowspan="2">20</td>
+        </tr>
+        <tr>
+            <td>Steward</td>
+            <td>Doe</td>
+        </tr>
+    </table><br><br>
+
+
+    <table width="100%">
+        <tr>
+            <td>
+                <img src="./images/bg-image.jpg" alt="normal photo" width="250px" height="200px">
+            </td>
+            <td>
+                <img src="./images/bg-image.jpg" alt="normal photo" width="250px" height="200px">
+            </td>
+            <td>
+                <img src="./images/bg-image.jpg" alt="normal photo" width="250px" height="200px">
+            </td>
+            <td>
+                <img src="./images/bg-image.jpg" alt="normal photo" width="250px" height="200px">
+            </td>
+        </tr>
+    </table><br><br>
+
+    <table cellPadding="50px" align="center">
+        <tr>
+            <td>
+                <label for="">Name: </label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+    </table>
+
+    <!-- </center> -->
+
+    <!----div prectics and and Css use------>
+
+    <div style="background-color: aqua;">
+        <h1 style="text-align: center;">Shubham</h1>
+    </div>
+
+    <!--text padding-->
+
+
+    <div style="background-color: aqua;">
+        <h1 style="padding-top:100px ;">Shubham</h1>
+    </div>
+
+    <!--div of  in div-->
+
+    <div style="background-color: aqua;">
+        <h1>Shubham</h1>
+        <h1 style="text-align: right; background-color: blueviolet;">Shubham</h1>
+    </div>
+
+
+    <!-- Nested Div -->
+    <div style="background-color: yellow;">
+        <div style="background-color: red;">
+            <h1>London</h1>
+        </div>
+        <div style="background-color: gray;">
+            <h1>India</h1>
+        </div>
+        <div style="background-color: green;">
+            <h1>China</h1>
+        </div>
+    </div>
+
+    <!-- Box Model -->
+    <div style="background-color: aqua; margin: 50px; padding-inline: 50px; border: 1px solid black; width: 50%; ">
+        <h1 style="text-transform: capitalize;">box model</h1>
+        <p style="outline-color: red; outline-style: dashed; text-transform: uppercase;">Outline</p>
+        <p style="text-transform: lowercase;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est inventore ab
+            dolor expedita, similique dolorum doloremque deleniti iusto quo, ratione numquam quis quaerat, explicabo
+            temporibus dolores aut animi! Consequatur quasi repellat porro excepturi sunt fuga voluptatum esse omnis
+            asperiores. Architecto.</p>
+    </div>
+
+    <div style="background-color: yellow; padding: 20px;">
+        <hr style="width: 35%; float: left;">
+        <span style="text-align: center; margin-inline-start: 70px; width: 20%;">Lorem ipsum dolor sit amet.</span>
+        <hr style="width: 35%; float: right;">
+    </div>
+
+    <div>
+        <i class="fa-solid fa-10x fa-user icon"></i>
+        <i class="fa-solid fa-7x fa-truck"></i>
+    </div>
+
+    <!-- Position  -->
+    <div style="background-color: aqua; width: 300px; height: 300px; width: 100%; position: relative; z-index: 1;">
+        <img src="./images/snowwhite.jpeg" alt="" height="250px" width="300px"
+            style="">
+            <!-- <h1 style="">This is a heading with higher zIndex</h1> -->
+        <img src="./images/Azaad.avif" alt="" height="250px" width="300px"
+            style="position: absolute; top: 20px; left: 50px; z-index: -1;">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.bell-box{
+height:50px;
+width:50px;
+background-color:#6969D7;
+margin-inline: auto;
+position:relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding:20px;
+}
+.badge{
+    background-color: tomato;
+    color:white;
+    border-radius: 100px;
+    padding:5px;
+    font-size: 10px;
+    position:absolute;
+    right:22px;
+    top:22px
+
+    
+}

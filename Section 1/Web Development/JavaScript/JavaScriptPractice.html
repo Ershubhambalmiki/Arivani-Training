@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.javascript practice</title>
+    <script src="./practice.js"></script>
+  
+</head>
+<body>
+
+    
+<button onclick="document.getElementById('image').src = './images/pic_bulbon.gif'">Click me to turn the bulb on</button>
+<img id="image" src="./images/pic_bulboff.gif" alt="">
+<button onclick="document.getElementById('image').src = './images/pic_bulboff.gif'">Click me to turn the bulb off</button>
+<br><br>
+
+
+<!-- Show Name on clik -->
+ <button  onclick="document.getElementById('Name').innerHTML='Shubham'">Show Name </button>
+ <h1 id="Name"></h1>
+
+ <!-- Change Name  -->
+ <button  onclick="document.getElementById('Name1').innerHTML='Shubham balmiki'">click on Change Name </button>
+ <h1 id="Name1">Shubham</h1>
+
+ <!-- text color Change from Javascript -->
+<!-- 
+ <span id="Change-color"onclick="document.getElementById('Change-color').style.color='red'" >Shubham</span>
+
+
+
+ <p id="Change" onclick="document.getElementById('Change').style.fontSize='35px';style.color='red'" >Shubham</p> -->
+
+
+ <div id="style" style="cursor: pointer;" onclick="document.getElementById('style').style='color:yellow ;background-color:red;width:100px;height:100px;font-weight:bold;border-radius:5px;display:flex;justify-content:center;align-items:center';">Shubham</div>
+ <br><br>
+
+ <span style="display: none;color: brown;font-size: 30px;" id="Show" >Javascript</span>
+ 
+ <br>
+ <button  onclick="document.getElementById('Show').style.display='block'">click me and show now</button><br><br>    
+
+
+
+
+ <!-- <button onclick="documnet.getElementById('photo').src='https:/encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9EB670a_kRnKwt_tAxLETqL1gmEzR28oSA&s'" > click now and change the image</button>
+
+ <img id="photo" src="https:/encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToLHXMf9m-fE6ci5esc8PUySUaFDZzRHtVZw&s" alt="">
+ <button onclick="documnet.getElementById('photo').src='https:/encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR803pEE90EZIm_iYlZTmhh4BEODpzoMSdSQ&s'"> click now and change the second image</button> -->
+
+ 
+ <button onclick="imgFunction()" > click now and change the image</button>
+
+ <img id="photo" src="https:/encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToLHXMf9m-fE6ci5esc8PUySUaFDZzRHtVZw&s" alt="">
+ <br>
+ <br>
+
+<!-- innerhtml -->
+
+<p>-----------innerhtml------------</p>
+
+
+<span id="inner-html">Javascript</span><br><br>
+
+ <button onclick="document.getElementById('inner-html').
+ innerHTML='<h1><b><i>javascript programing language</i></b></h1>'">click now</button><br><br>
+
+<!-- innertext -->
+ <p>-----------innertext------------</p>
+
+<span id="inner-text">javascript</span><br><br>
+
+<button onclick="document.getElementById('inner-text').innerText='<h1>Javascript programing language</h1>'"> click me</button>
+<br><br>
+
+<!-- document.write -->
+ <p>-------------document.write--------------------</p>
+
+
+<button onclick="document.write(12+5)">click and sum the number</button><br><br>
+
+<button onclick="document.write('Shubham')">click and show the name </button><br><br>
+
+
+<!-- alert -->
+
+<button onclick="alert('product of 2*5 = '+2*5)">click now</button>
+
+<script>
+
+
+
+ 
+
+    // let a ,b,c
+    // a=2
+    // b=5
+    // c=a+b
+    // console.log(c)
+
+
+    
+</script>
+
+
+
+</body>
+</html>

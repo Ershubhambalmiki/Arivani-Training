@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Calculator</h1>
+       <div style="display: flex;">
+        <div>
+            <h2 id="msg"></h2>
+        </div>
+        <div> 
+            <h2 id="calculator1"></h2>
+        </div>
+       </div>
+        <button onclick="calculatorA().innerHTML.output">
+            click Now
+        </button>
+    </div>
+
+    <script>
+
+        function calculatorA() {
+            let userinput = parseInt(prompt("Enter a First Number"));
+            let opretor = prompt("Enter a _____ [+]  [-]  [/]  [*]  [%] ");
+            let userinput1 = parseInt(prompt("Enter a Second Number"));
+            if (opretor == "+"){
+              output = userinput + userinput1;
+                document.getElementById("calculator1").innerHTML=output;
+                document.getElementById("msg").innerHTML="Your Result is = ";
+            }else if (opretor == "-"){
+                output = userinput - userinput1;
+                document.getElementById("calculator1").innerHTML=output;
+                document.getElementById("msg").innerHTML="Your Result is = ";
+            }else if (opretor == "%"){
+                output = userinput % userinput1;
+                document.getElementById("calculator1").innerHTML=output;
+                document.getElementById("msg").innerHTML="Your Result is = ";
+            }else if (opretor == "*"){
+                output = userinput * userinput1;
+                document.getElementById("calculator1").innerHTML=output;
+                document.getElementById("msg").innerHTML="Your Result is = ";
+            }else if (opretor == "/"){
+                output = userinput / userinput1;
+                document.getElementById("calculator1").innerHTML=output;
+                document.getElementById("msg").innerHTML="Your Result is = ";
+            } 
+
+        }
+
+    </script>
+
+</body>
+
+</html>

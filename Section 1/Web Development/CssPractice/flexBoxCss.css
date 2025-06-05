@@ -1,0 +1,205 @@
+/* flex direction */
+
+/* direction row */
+.direction-content {
+    background-color: aqua;
+    height: 150px;
+    width: 100%;
+    display: flex;
+}
+
+.direction-items {
+    background-color: aliceblue;
+    flex-direction: row;
+    height: 50px;
+    width: 70px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* direction colom */
+}
+
+.direction-content-colom {
+    background-color: rgb(88, 152, 152);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.direction-items-colom {
+    background-color: aliceblue;
+    height: 50px;
+    width: 70px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* direction row rivers */
+
+.direction-content-row-r {
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.direction-items-row-r {
+    background-color: aliceblue;
+    height: 50px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* direction colom reverse */
+
+.direction-content-colom-r {
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.direction-items-colom-r {
+    background-color: aliceblue;
+    height: 50px;
+    width: 100px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* flex flow */
+.flow {
+    background-color: bisque;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+.flow-item {
+    background-color: aqua;
+    height: 50px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+/* space around */
+
+.space-around {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    align-items: center;
+}
+
+.space-around-item {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 70px;
+
+}
+
+/* space bitween */
+.space-bitween {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+
+}
+
+.space-bitween-item {
+    background-color: white;
+    height: 50px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* space evenly */
+.space-evenly {
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    align-items: center;
+
+}
+
+.space-evenly-item {
+    background-color: white;
+    height: 50px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* shrink */
+.shrink {
+    background-color: blueviolet;
+    height: 150px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.shrink-item1 {
+    background-color: azure;
+    height: 50px;
+    width: 70px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shrink-item2 {
+    background-color: azure;
+    height: 50px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    /* flex-grow: 8;
+    flex-basis: 200px; */
+    flex-shrink: 0;
+    /* order: 2; */
+
+
+}
+
+.shrink-item3 {
+    background-color: azure;
+    height: 50px;
+    width: 70px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

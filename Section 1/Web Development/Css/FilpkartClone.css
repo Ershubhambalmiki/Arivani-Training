@@ -1,0 +1,27 @@
+/* main div */
+
+#maindiv{
+    background-color:#f2f3f5;
+    padding-top:10px ;
+}
+
+
+/* div Hedar */
+
+.divhedar{
+    background-color:white;
+    margin-inline:10px;
+    position:sticky;
+    top:0px;
+
+}
+
+/* hedar Table */
+
+.hedartable{
+    width:100%;
+}
+
+/*  Search Bar */
+
+
