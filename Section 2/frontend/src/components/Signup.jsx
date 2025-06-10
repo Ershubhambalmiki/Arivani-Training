@@ -11,9 +11,10 @@ const Signup = () => {
   const [showCnfPassword, setShowCnfPassword] = useState(false)
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("")
+  const [success,setSuccess]=useState("")
 
 
-  const Swal = require('sweetalert2');
+  // const Swal = require('sweetalert2');
 
 
   const hendelSignUp = () => {
@@ -23,21 +24,18 @@ const Signup = () => {
       return;
     }
     if (password.trim() !== cnfPassword.trim()) {
-      <ShowAlert errorMsg={error} />
+      setError("password dosen't match")
       return;
     }
     try {
       setLoading(true);
-      console.log("Name:", name)
-      console.log("Email:", email)
-      console.log("Password:", password)
-      window.alert([name, email]);
-      Swal.fire({
-        title: "Success",
-        text: "Sign Up successfull",
-        icon: "success",
-        confirmButtonText: "Ok"
-      })
+      // console.log("Name:", name)
+      // console.log("Email:", email)
+      // console.log("Password:", password)
+      // window.alert([name, email]);
+
+      setSuccess("Successfull")
+    
       setName("")
       setEmail('')
       setPassword('')
@@ -140,7 +138,7 @@ const Signup = () => {
         </button>
 
       </div>
-      <ShowAlert errorMsg={error} />
+      <ShowAlert errorMsg={error} successMag={success} setErrormsg={setError} setSuccessMsg={setSuccess} />
     </div>
   )
 }

@@ -158,15 +158,15 @@ const LaptopsList = () => {
                                 </select>
                             </div>
                             <div>
-                                <label htmlFor="" className='me-2'>Select Price</label>
+                                <label htmlFor="" className='me-2'>Select Minmum Price Range </label>
                                 <select className='w-full mt-2' onChange={handleprice}>
-                                    <option value="">Select Price</option>
-                                    <option >30000</option>
-                                    <option > 40000</option>
-                                    <option > 50000</option>
-                                    <option > 60000</option>
-                                    <option > 70000</option>
-                                    <option > 100000</option>
+                                    <option value="">Select Price </option>
+                                    <option >{`<= 30000`}</option>
+                                    <option > {"<= 40000"}</option>
+                                    <option > {"<= 50000"}</option>
+                                    <option > {"<= 60000"}</option>
+                                    <option > {"<= 70000"}</option>
+                                    <option > {"<= 100000"}</option>
                                 </select>
                             </div>
                         </div>

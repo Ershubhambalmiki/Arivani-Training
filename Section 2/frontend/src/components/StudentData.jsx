@@ -25,11 +25,11 @@ const StudentData = () => {
             status: "--Select--"
         }
     )
-    const [loading, setloading] = useState(false);
     const [stdId, setStdId] = useState(student.id);
     const [stdName, setStdName] = useState(student.name);
     const [stdProfile, setStdProfile] = useState(student.profile);
     const [stdStatus, setStdStatus] = useState(student.status);
+    const [reloding, setreloding] = useState(false)
 
 
     const updateStudent = () => {
@@ -38,7 +38,7 @@ const StudentData = () => {
             return;
         }
         try {
-            setloading(true);
+            setreloding(true);
             console.log(stdId, stdName, stdProfile, "updated std data");
             setStudent(
                 {
@@ -48,11 +48,15 @@ const StudentData = () => {
                     status: stdStatus
                 }
             )
+            setTimeout(() => {
+                setreloding(false);
+            }, 2000);
             alert("Student details updated");
-            setloading(false);
+
         } catch (error) {
+
             console.log(error);
-            setloading(false);
+
         }
     }
 
@@ -124,9 +128,9 @@ const StudentData = () => {
                     </div>
                     <button className='bg-blue-300 px-5 py-1 rounded mt-5'
                         onClick={updateStudent}
-                        disabled={loading} >
+                        disabled={reloding} >
                         {
-                            loading ? "please wait..." : "Submit"
+                            reloding ? "please wait..." : "Submit"
                         }
                     </button>
 

@@ -2,7 +2,7 @@ import React, {  useState } from 'react'
 
 const TaskApp = () => {
     const [task, setTask] = useState([]);
-    const [editTask, setEditTask] = useState("")
+    const [editTask, setEditTask] = useState(task.text)
 
     const handleAddTask = (e) => {
         if (e.code == "Enter") {
