@@ -4,47 +4,49 @@ import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Divider from '@mui/material/Divider';
-import { FilterAlt, Search } from '@mui/icons-material';
+import { FilterAlt, Refresh, Search } from '@mui/icons-material';
 
 const LaptopsList = () => {
     const [data, setdata] = useState([]);
+    const [search, setSearch] = useState("")
     const [selectBrand, setSelectBrand] = useState("")
     const [selectprice, SetSelectPrice] = useState(0);
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
-        if(laptopData){
+        if (laptopData) {
             setdata(laptopData)
         }
     }, [])
 
-    console.log(data, "data value after useEffect");
-    
-    const brandOptions = [
-        laptopData.map((item, idx) => {
-            return (
-                item?.brand
-            )
-        })
-    ]
-
-    console.log(brandOptions, "brandOptions");
-
     const handleFilter = () => {
         setOpen(false);
+
         if (selectBrand && !selectprice) {
+
             const filteredData = laptopData.filter((item) => item?.brand == selectBrand);
             setdata(filteredData)
+
         }
-        if (!selectBrand && selectprice) {
-            const filteredData = laptopData.filter((item) => item?.price <= selectprice);
+
+        else if (!selectBrand && selectprice) {
+            console.log(selectprice, "selectedPrice");
+            const filteredData = laptopData.filter((item) => item.price <= selectprice);
+            console.log(filteredData);
             setdata(filteredData)
         }
-        if (selectBrand && selectprice) {
+        else if (selectBrand && selectprice) {
             const filterData = laptopData.filter((item) => item?.brand == selectBrand && item?.price <= selectprice);
             setdata(filterData);
         }
+
+        else if (!selectBrand && !selectprice) {
+            setdata(laptopData)
+        }
+        setSearch("")
+
     }
+
 
     const handleClose = () => {
         setOpen(false);
@@ -66,20 +68,27 @@ const LaptopsList = () => {
     };
 
     const onSerchInput = (e) => {
-        let search = e.target.value
-        const filterData = laptopData.filter((item) => item?.model.toLowerCase().includes(search.toLowerCase().trim()));
+        // let search = e.target.value
+        setSearch(e.target.value)
+        const filterData = laptopData.filter((item) => item?.model.toLowerCase().includes(e.target.value.toLowerCase().trim()));
         setdata(filterData);
-
+         setSelectBrand("")
+        SetSelectPrice("")
     }
 
     const handleSelect = (e) => {
-        console.log(e.target.value, "selected brand");
         setSelectBrand(e.target.value);
     }
     const handleprice = (e) => {
         let price = e.target.value
-        console.log(e.target.value, "selected price");
         SetSelectPrice(price)
+    }
+    const handleReload = () => {
+        const reload = laptopData
+        setdata(reload)
+        setSelectBrand("")
+        SetSelectPrice("")
+        setSearch("")
     }
 
     return (
@@ -89,6 +98,7 @@ const LaptopsList = () => {
                     <div className='relative'>
                         <Search className='text-gray-4 00' style={{ position: "absolute", top: 9, left: 8 }} />
                         <input type="text" className='border-gray-300 rounded w-96 ps-10 py-2 '
+                            value={search}
                             onChange={onSerchInput}
                             placeholder='Search...'
                         />
@@ -97,6 +107,9 @@ const LaptopsList = () => {
                         <button className='bg-blue-500 px-5 py-2 rounded-lg text-white cursor-pointer' onClick={handleOpen}>
                             <FilterAlt /> Filter By
                         </button>
+                        <button
+                            onClick={handleReload}
+                        ><Refresh /></button>
                     </div>
                 </div>
                 <div className='grid grid-cols-3 gap-4 mt-5'>
@@ -148,25 +161,30 @@ const LaptopsList = () => {
                         <h1>Filter By</h1>
                         <div className='grid grid-cols-2 gap-5 mt-5 ms-5'>
                             <div className=''>
-                                <label htmlFor="" className='me-2'>Select Brand</label>
-                                <select className='w-full mt-2' onChange={handleSelect}>
-                                    <option value="0">Select Brand</option>
+                                <label htmlFor="" className='me-2'>{`Select Brand`}</label>
+                                <select className='w-full mt-2' onChange={handleSelect}
+                                    value={selectBrand}>
+                                    <option value="">{`Select Brand`}</option>
                                     {
-                                        brandOptions[0].map((item, index) =>
-                                            <option key={index}>{item}</option>)
+                                        laptopData.map((item, index) =>
+                                            <option key={index}>{item.brand}</option>)
                                     }
                                 </select>
                             </div>
                             <div>
                                 <label htmlFor="" className='me-2'>Select Minmum Price Range </label>
-                                <select className='w-full mt-2' onChange={handleprice}>
+                                <select className='w-full mt-2' onChange={handleprice}
+                                    value={selectprice}>
                                     <option value="">Select Price </option>
-                                    <option >{`<= 30000`}</option>
-                                    <option > {"<= 40000"}</option>
-                                    <option > {"<= 50000"}</option>
-                                    <option > {"<= 60000"}</option>
-                                    <option > {"<= 70000"}</option>
-                                    <option > {"<= 100000"}</option>
+                                    <option >30000</option>
+                                    <option >40000</option>
+                                    <option >50000</option>
+                                    <option >60000</option>
+                                    <option >70000</option>
+                                    <option >100000</option>
+                                    {/* {
+                                        laptopData.map((item) => <option >{item.price}</option>)
+                                    } */}
                                 </select>
                             </div>
                         </div>

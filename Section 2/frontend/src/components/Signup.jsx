@@ -19,7 +19,7 @@ const Signup = () => {
 
   const hendelSignUp = () => {
     if (!name.trim() || !email.trim() || !password.trim() || !cnfPassword.trim()) {
-      setError("All filed is requird")
+      setError("All filed are requird")
 
       return;
     }
